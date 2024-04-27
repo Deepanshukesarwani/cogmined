@@ -7,6 +7,11 @@ export default {
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {
+      width: ['responsive', 'percent'], // Enable the percent variant for width utilities
+    },
+  },
   plugins: [],
 }
 
