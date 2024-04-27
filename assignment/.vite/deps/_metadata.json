@@ -1,0 +1,43 @@
+{
+  "hash": "6d51dd7b",
+  "configHash": "dda055af",
+  "lockfileHash": "6c5d1eff",
+  "browserHash": "dd74f191",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "934b6bbe",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c735827f",
+      "needsInterop": true
+    },
+    "@radix-ui/react-label": {
+      "src": "../../node_modules/@radix-ui/react-label/dist/index.mjs",
+      "file": "@radix-ui_react-label.js",
+      "fileHash": "99f7639f",
+      "needsInterop": false
+    },
+    "@radix-ui/react-switch": {
+      "src": "../../node_modules/@radix-ui/react-switch/dist/index.mjs",
+      "file": "@radix-ui_react-switch.js",
+      "fileHash": "090ebc9d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-CSJZHRVB": {
+      "file": "chunk-CSJZHRVB.js"
+    },
+    "chunk-OYP6L5KJ": {
+      "file": "chunk-OYP6L5KJ.js"
+    },
+    "chunk-ATZAHYIB": {
+      "file": "chunk-ATZAHYIB.js"
+    }
+  }
+}
