@@ -5,10 +5,7 @@ function sidebar1comp() {
   return (
     <div className=" w-20 bg-red-300 flex-col justify-between">
       <section className="h-3/4 border-black ">
-        {/* section1  */}
-        {/* <Label.Root className="LabelRoot" htmlFor="firstName">
-          First name
-        </Label.Root> */}
+        {/* profile section  */}
         <div className="w-full h-1/6  flex items-center justify-center">
           <img
             src="https://lh3.googleusercontent.com/ogw/AF2bZyjLjdsdIiXQou9qTLIzaLmR1MUYDFoTXCu4RvOgA4gMD6I=s64-c-mo"
@@ -16,7 +13,8 @@ function sidebar1comp() {
             className="rounded-full "
           />
         </div>
-
+        {/* ...................................................................................................................... */}
+        {/* chat section  */}
         <div className="w-full h-1/6 rounded-full ">
           <svg
             viewBox="0 0 15 15"
@@ -32,6 +30,8 @@ function sidebar1comp() {
             ></path>
           </svg>
         </div>
+        {/* ............................................................................................................................................ */}
+        {/* user section  */}
 
         <div className="w-full h-1/6">
           <svg
@@ -48,7 +48,8 @@ function sidebar1comp() {
             ></path>
           </svg>
         </div>
-
+        {/* ................................................................................................................................ */}
+        {/* setting section  */}
         <div className="w-full h-1/6">
           <svg
             viewBox="0 0 15 15"
@@ -66,23 +67,22 @@ function sidebar1comp() {
           </svg>
         </div>
       </section>
-
+      {/* ..................................................................................................................................... */}
+      {/* mode switching section  */}
       <section className="flex justify-center items-center bg-green-200 h-1/4">
         {/* section2  */}
         <div className="">
-        <Switch.Root
-          className="SwitchRoot  w-[52px] h-[30px] bg-red-600 rounded-full relative shadow-md  rotate-90 data-[state=checked]:bg-black "
-        //   data-state="unchecked"
-          id="airplane-mode"
-        >
-          <Switch.Thumb
-            className="SwitchThumb block w-[21px] h-[21px] bg-white rounded-full shadow-md translate-x-[2px] duration-500 data-[state=checked]:translate-x-[28px] "
-            // data-state="unchecked"
-          />
-        </Switch.Root>
-
+          <Switch.Root
+            className="SwitchRoot  w-[52px] h-[30px] bg-red-600 rounded-full relative shadow-md  rotate-90 data-[state=checked]:bg-black "
+            //   data-state="unchecked"
+            id="airplane-mode"
+          >
+            <Switch.Thumb
+              className="SwitchThumb block w-[21px] h-[21px] bg-white rounded-full shadow-md translate-x-[2px] duration-500 data-[state=checked]:translate-x-[28px] "
+              // data-state="unchecked"
+            />
+          </Switch.Root>
         </div>
-       
       </section>
     </div>
   );
