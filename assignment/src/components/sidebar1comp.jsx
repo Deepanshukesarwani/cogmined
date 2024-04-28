@@ -20,7 +20,7 @@ function sidebar1comp() {
         <div className="w-full h-1/6 rounded-full ">
           <svg
             viewBox="0 0 15 15"
-            className="w-full p-5"
+            className="w-full p-6"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -36,7 +36,7 @@ function sidebar1comp() {
         <div className="w-full h-1/6">
           <svg
             viewBox="0 0 15 15"
-            className="w-full p-5"
+            className="w-full p-6"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -52,7 +52,8 @@ function sidebar1comp() {
         <div className="w-full h-1/6">
           <svg
             viewBox="0 0 15 15"
-            className="w-full p-5"
+            className="w-full p-6
+            "
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
