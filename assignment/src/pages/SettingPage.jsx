@@ -5,8 +5,8 @@ const SettingPage = () => {
     <div className='h-screen w-screen bg-gray-500 flex'>
 
     <Frame/>
-    <div className='h-full w-3/4 bg-green-600' >
-    <h1>setting page</h1>
+    <div className='h-full w-[75%] bg-gray-900' >
+    <h1 className='text-white'>setting page</h1>
     </div>
   </div>
   )

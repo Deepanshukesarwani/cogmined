@@ -5,8 +5,9 @@ export const Detailcontext=createContext(null);
  export const DetailProvider=(props)=>{
 
     const [data,setdata]=useState([]);
+    const [mode,setmode]=useState(false);
   return (
-    <Detailcontext.Provider value={{data,setdata}}>
+    <Detailcontext.Provider value={{data,setdata,mode,setmode}}>
         {props.children}
     </Detailcontext.Provider>
   )

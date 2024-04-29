@@ -6,11 +6,11 @@ const Profile = () => {
     //  <Frame/>
     //  <h1>this is a chat page</h1>
     // </div>
-    <div className='h-screen w-screen bg-gray-500 flex'>
+    <div className='h-full w-full flex'>
 
       <Frame/>
-      <div className='h-full w-3/4 bg-green-600' >
-      <h1>Profile page</h1>
+      <div className='h-full min-w-[75%] bg-gray-900' >
+      <h1 className='text-white'>Profile page</h1>
       </div>
     </div>
   )

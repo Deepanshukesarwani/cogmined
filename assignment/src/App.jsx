@@ -10,7 +10,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-   <div className='h-screen overflow-hidden '>
+   <div className='h-screen overflow-hidden w-screen '>
   <Routes>
     <Route path='/' element={<ChatPage/>}/>
     <Route path='/setting' element={<SettingPage/>}/>
