@@ -1,37 +1,52 @@
 {
-  "hash": "6d51dd7b",
-  "configHash": "dda055af",
-  "lockfileHash": "6c5d1eff",
-  "browserHash": "dd74f191",
+  "hash": "91dce9d2",
+  "configHash": "50eb057f",
+  "lockfileHash": "02a47907",
+  "browserHash": "ffd2b55d",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "934b6bbe",
+      "fileHash": "8a11f532",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "c735827f",
+      "fileHash": "d52849f6",
       "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "672a0f5a",
+      "needsInterop": false
+    },
+    "@radix-ui/react-accordion": {
+      "src": "../../node_modules/@radix-ui/react-accordion/dist/index.mjs",
+      "file": "@radix-ui_react-accordion.js",
+      "fileHash": "7273e5a2",
+      "needsInterop": false
     },
     "@radix-ui/react-label": {
       "src": "../../node_modules/@radix-ui/react-label/dist/index.mjs",
       "file": "@radix-ui_react-label.js",
-      "fileHash": "99f7639f",
+      "fileHash": "aed10b94",
       "needsInterop": false
     },
     "@radix-ui/react-switch": {
       "src": "../../node_modules/@radix-ui/react-switch/dist/index.mjs",
       "file": "@radix-ui_react-switch.js",
-      "fileHash": "090ebc9d",
+      "fileHash": "5b6de8bb",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-CSJZHRVB": {
-      "file": "chunk-CSJZHRVB.js"
+    "chunk-OTCMN7ZU": {
+      "file": "chunk-OTCMN7ZU.js"
+    },
+    "chunk-KLH7LMDK": {
+      "file": "chunk-KLH7LMDK.js"
     },
     "chunk-OYP6L5KJ": {
       "file": "chunk-OYP6L5KJ.js"
