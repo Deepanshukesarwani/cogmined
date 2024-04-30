@@ -38,6 +38,8 @@ function sidebar2comp() {
     if (event.key === "Enter") {
       handleSearch();
       counterState.setShowSetting(false);
+      counterState.setShowProfile(false);
+      counterState.setShowUser(false);
     }
   };
 

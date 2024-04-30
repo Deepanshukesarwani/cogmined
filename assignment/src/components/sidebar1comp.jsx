@@ -16,16 +16,27 @@ function sidebar1comp() {
   };
 
   const location = useLocation();
+
+const profileClickHandler=()=>{
+  modeState.setShowProfile((prev)=>!prev);
+}
+
+
   const clickHandlerOfSetting=()=>{
     modeState.setShowSetting((prev)=>!prev);
   }
+
+  const userClickHandler=()=>{
+    modeState.setShowUser((prev)=>!prev);
+    }
+
   // console.log(isChecked);
   return (
     <div className=" w-20  flex-col justify-between h-screen bg-gray-800 ">
       <section className="h-3/4 border-black ">
         {/* profile section  */}
         <Link to="/profile">
-          <div className={`w-full h-1/6 border-3 border-black  flex items-center justify-center  ${location.pathname === '/profile' ? 'shadow-white' : ''}`}>
+          <div className={`w-full h-1/6 border-3 border-black  flex items-center justify-center  ${location.pathname === '/profile' ? 'shadow-white' : ''}`} onClick={profileClickHandler}>
             <img
               src="https://lh3.googleusercontent.com/ogw/AF2bZyjLjdsdIiXQou9qTLIzaLmR1MUYDFoTXCu4RvOgA4gMD6I=s64-c-mo"
               alt="user"
@@ -56,7 +67,7 @@ function sidebar1comp() {
         {/* user section  */}
 
         <Link to="/user">
-          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/user' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}`}>
+          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/user' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}` } onClick={userClickHandler}>
             <svg
               viewBox="0 0 15 15"
               className="w-full p-6"

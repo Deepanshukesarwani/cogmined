@@ -18,24 +18,26 @@ const ChatPage = () => {
           <>
             {dataState.mode ? (
               <>
-              <ChatSection data={dataState} mode={dataState.mode}/>
+                <ChatSection data={dataState} mode={dataState.mode} />
               </>
             ) : (
               <>
-                <ChatSection data={dataState}/>
+                <ChatSection data={dataState} />
               </>
-            )
-            }
+            )}
           </>
         ) : (
-          <div className='w-[full] h-full flex justify-center items-center'>
-              <div className="w-[40%] h-auto">
-
-          <h1 className='text-white text-xl text-center'>hello..</h1>
-           <h1 className='text-white text-xl text-center'>You are in chat  page</h1>
-           <h1 className='text-white text-xl text-center'>Tap Chevron button to see chat on Side bar</h1>
-              </div>
-        </div>
+          <div className="w-[full] h-full flex justify-center items-center">
+            <div className="w-[40%] h-auto">
+              <h1 className="text-white text-xl text-center">hello..</h1>
+              <h1 className="text-white text-xl text-center">
+                You are in chat page
+              </h1>
+              <h1 className="text-white text-xl text-center">
+                Tap Chevron button to see chat on Side bar
+              </h1>
+            </div>
+          </div>
         )}
       </div>
     </div>

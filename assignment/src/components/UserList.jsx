@@ -20,6 +20,8 @@ const UserList = ({id,Name,Lastchat,ResearchName,receverMsg }) => {
     // if(location.pathname==='/')
     counterState.setdata(userData);
     counterState.setShowSetting(false);
+    counterState.setShowProfile(false);
+    counterState.setShowUser(false);
   }
   return (
     <>
