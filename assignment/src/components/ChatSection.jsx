@@ -5,22 +5,22 @@ const ChatSection = ({data,mode}) => {
   return (
     <>
       <div className="h-[10%]">
-                  <h1 className="text-white text-xl">{data.data[0].Name}</h1>
+                  <h1 className="text-white text-base pl-4">{data.data[0].Name}</h1>
 
                   {/* if condtion on the basis of mode  */}
                   {
-                    mode?(<p className="text-white">{data.data[0].ResearchName}</p>):(<p className="text-white">Chat</p>)
+                    mode?(<p className="text-white text-xs mt-1 pl-4">{data.data[0].ResearchName}</p>):(<p className="text-white  mt-1 text-xs pl-4">Chat</p>)
                   }
                   
-                  <div className="w-full flex">
+                  <div className="w-full flex justify-center items-center mt-1">
                     <hr className="w-[42%]" />
-                    <h className="w-[20%] text-white text-center text-2xl ">
+                    <h6 className="w-[20%] text-white text-center text-lg ">
                       Today
-                    </h>
+                    </h6>
                     <hr className="w-[42%]" />
                   </div>
                 </div>
-                <div className="min-h-[83%]">
+                <div className="min-h-[83%] p-4">
                   {/* chat message container  */}
 
                   <MessageCard/>

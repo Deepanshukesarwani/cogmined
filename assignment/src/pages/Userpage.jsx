@@ -8,7 +8,7 @@ const Userpage = () => {
   return (
     <div className="h-full w-full flex">
       <Frame />
-      <div className="h-full min-w-[75%] bg-gray-900">
+      <div className="h-full w-[75%] bg-gray-900">
         {dataState.showUser ? (
           <>
           <div className="w-[full] h-full flex justify-center items-center">

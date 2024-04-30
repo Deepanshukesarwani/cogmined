@@ -13,7 +13,7 @@ const ChatPage = () => {
   return (
     <div className="h-full w-full  flex">
       <Frame />
-      <div className=" scrol h-full min-w-[75%] bg-gray-900 p-2">
+      <div className=" scrol h-full w-[75%] bg-gray-900 p-2">
         {userInfo.length !== 0 ? (
           <>
             {dataState.mode ? (

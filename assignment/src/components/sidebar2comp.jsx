@@ -53,7 +53,7 @@ function sidebar2comp() {
         <div className="h-full w-[90%] flex items-center p-4">
           
         <input
-          className="Input rounded-full p-2  h-10 w-[100%] text-slate-950"
+          className="Input rounded-sm placeholder-sm p-0 text-sm h-7 w-[100%] text-slate-950"
           type="text"
           id="firstName"
           value={searchTerm}

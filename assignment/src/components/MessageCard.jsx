@@ -19,13 +19,13 @@ const MessageCard = () => {
           ></path>
         </svg>
       </div>
-      <h1 className="text-white rounded-t-2xl bg-indigo-900  rounded-br-2xl w-full p-3  ">
+      <h6 className="text-white text-sm rounded-t-2xl bg-indigo-900  rounded-br-2xl w-full p-3  ">
         {" "}
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
         distinctio asperiores itaque deserunt praesentium animi non suscipit
         sapiente quae debitis ratione laboriosam, nihil harum. Recusandae
         sapiente fugiat saepe eos sit.{" "}
-      </h1>
+      </h6>
     </div>
   );
 };

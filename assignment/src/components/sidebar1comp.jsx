@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import * as Label from "@radix-ui/react-label";
 import * as Switch from "@radix-ui/react-switch";
-import { Link,useLocation } from "react-router-dom";
-import { useContext } from 'react';
-import { Detailcontext } from '../Context/Details';
+import { Link, useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { Detailcontext } from "../Context/Details";
 function sidebar1comp() {
-
-
   // note if isChecked is false the mode 1 else mode 2
 
-  const modeState=useContext(Detailcontext);
+  const modeState = useContext(Detailcontext);
   // const [isChecked, setIsChecked] = useState(false);
   const handleToggle = () => {
     modeState.setmode((prevState) => !prevState);
@@ -17,26 +15,30 @@ function sidebar1comp() {
 
   const location = useLocation();
 
-const profileClickHandler=()=>{
-  modeState.setShowProfile((prev)=>!prev);
-}
+  const profileClickHandler = () => {
+    modeState.setShowProfile((prev) => !prev);
+  };
 
+  const clickHandlerOfSetting = () => {
+    modeState.setShowSetting((prev) => !prev);
+  };
 
-  const clickHandlerOfSetting=()=>{
-    modeState.setShowSetting((prev)=>!prev);
-  }
-
-  const userClickHandler=()=>{
-    modeState.setShowUser((prev)=>!prev);
-    }
+  const userClickHandler = () => {
+    modeState.setShowUser((prev) => !prev);
+  };
 
   // console.log(isChecked);
   return (
     <div className=" w-20  flex-col justify-between h-screen bg-gray-800 ">
-      <section className="h-3/4 border-black ">
+      <section className="h-3/4 border-black r">
         {/* profile section  */}
         <Link to="/profile">
-          <div className={`w-full h-1/6 border-3 border-black  flex items-center justify-center  ${location.pathname === '/profile' ? 'shadow-white' : ''}`} onClick={profileClickHandler}>
+          <div
+            className={`w-[80%] h-1/6 border-3 border-black ml-2 flex items-center justify-center  ${
+              location.pathname === "/profile" ? "shadow-white" : ""
+            }`}
+            onClick={profileClickHandler}
+          >
             <img
               src="https://lh3.googleusercontent.com/ogw/AF2bZyjLjdsdIiXQou9qTLIzaLmR1MUYDFoTXCu4RvOgA4gMD6I=s64-c-mo"
               alt="user"
@@ -47,7 +49,13 @@ const profileClickHandler=()=>{
         {/* ...................................................................................................................... */}
         {/* chat section  */}
         <Link to="/">
-          <div className={`w-full h-1/6 rounded-full hover: bg-blend-lighten ${location.pathname === '/' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}`}>
+          <div
+            className={`w-full h-1/6 rounded-full hover: bg-blend-lighten ${
+              location.pathname === "/"
+                ? "shadow-white bg-gray-700 bg-blend-lighten"
+                : ""
+            }`}
+          >
             <svg
               viewBox="0 0 15 15"
               className="w-full p-6"
@@ -67,7 +75,14 @@ const profileClickHandler=()=>{
         {/* user section  */}
 
         <Link to="/user">
-          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/user' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}` } onClick={userClickHandler}>
+          <div
+            className={`w-full h-1/6  hover: rounded-full ${
+              location.pathname === "/user"
+                ? "shadow-white bg-gray-700 bg-blend-lighten"
+                : ""
+            }`}
+            onClick={userClickHandler}
+          >
             <svg
               viewBox="0 0 15 15"
               className="w-full p-6"
@@ -87,7 +102,14 @@ const profileClickHandler=()=>{
         {/* setting section  */}
 
         <Link to="/setting">
-          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/setting' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}`} onClick={clickHandlerOfSetting}>
+          <div
+            className={`w-full h-1/6  hover: rounded-sm ${
+              location.pathname === "/setting"
+                ? "shadow-white bg-gray-700 bg-blend-lighten"
+                : ""
+            }`}
+            onClick={clickHandlerOfSetting}
+          >
             <svg
               viewBox="0 0 15 15"
               className="w-full p-6 "
@@ -109,20 +131,24 @@ const profileClickHandler=()=>{
       <section className="flex justify-center items-center  h-1/4">
         {/* section2  */}
         <div className="  h-full">
-          <h3 className=' mb-4 text-white'>Mode 1</h3>
+          <h3 className=" mb-4 text-white text-sm">Mode 1</h3>
           <Switch.Root
             // className="SwitchRoot  w-[52px] h-[30px] bg-red-600 rounded-full relative shadow-md  rotate-90 data-[state=checked]:bg-black "
-            className={`SwitchRoot w-[52px] h-[30px] bg-gray-300 rounded-full border-2 border-white mb-2 relative shadow-md rotate-90 ${modeState.mode ? 'data-[state=checked]:bg-black' : '' }`}
+            className={`SwitchRoot w-[52px] h-[30px] bg-gray-300 rounded-full border-2 border-white mb-2 relative shadow-md rotate-90 ${
+              modeState.mode ? "data-[state=checked]:bg-black" : ""
+            }`}
             onClick={handleToggle}
             id="airplane-mode"
           >
             <Switch.Thumb
               // className="SwitchThumb block w-[21px] h-[21px] bg-white rounded-full shadow-md translate-x-[2px] duration-500 data-[state=checked]:translate-x-[28px] "
-              className={`SwitchThumb block w-[21px] h-[21px] bg-white rounded-full shadow-md translate-x-[2px] duration-500 ${modeState.mode ? 'data-[state=checked]:translate-x-[28px]' : ''}`}
+              className={`SwitchThumb block w-[21px] h-[21px] bg-white rounded-full shadow-md translate-x-[2px] duration-500 ${
+                modeState.mode ? "data-[state=checked]:translate-x-[28px]" : ""
+              }`}
               // data-state="unchecked"
             />
           </Switch.Root>
-          <h3 className='text-white mt-2'>Mode 2</h3>
+          <h3 className="text-white text-sm mt-2">Mode 2</h3>
         </div>
       </section>
     </div>

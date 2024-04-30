@@ -34,16 +34,16 @@ const UserList = ({id,Name,Lastchat,ResearchName,receverMsg }) => {
       <>
       <div className='w-[100%]'>
 
-     <h3 className='text-white'>{ResearchName}</h3>
-     <p className='text-white'>User: {Name}</p>
+     <h6 className='text-white text-base'>{ResearchName}</h6>
+     <p className='text-white text-xs'>User: {Name}</p>
       </div>
       </>
      )
      :(
       <>
       <div className='w-full'>
-         <h3 className='text-white  w-full'>{Name}</h3>
-         <p className='text-white'> id:  {id}</p>
+         <h6 className='text-white text-base w-full'>{Name}</h6>
+         <p className='text-white text-xs'> id:  {id}</p>
       </div>
       </>
      )
