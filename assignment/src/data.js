@@ -7,7 +7,7 @@ const user = [
         receverMsg:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
         ResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore ma",
         receiverResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna al",
-        ResearchName:"Research Topic 1",
+        ResearchName:"Research Topic 1 ",
         Date:"Date of Search"
         
     },
@@ -48,7 +48,7 @@ const user = [
         receverMsg:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
         ResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore ma",
         receiverResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna al",
-        ResearchName:"Research Topic 4",
+        ResearchName:"Research Topic 5",
         Date:"Date of Search"
     },
     {
@@ -58,7 +58,7 @@ const user = [
         receverMsg:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
         ResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore ma",
         receiverResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna al",
-        ResearchName:"Research Topic 4",
+        ResearchName:"Research Topic 6",
         Date:"Date of Search"
     },
     {
@@ -68,7 +68,7 @@ const user = [
         receverMsg:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
         ResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore ma",
         receiverResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna al",
-        ResearchName:"Research Topic 4",
+        ResearchName:"Research Topic 7",
         Date:"Date of Search"
     },
     {
@@ -78,39 +78,10 @@ const user = [
         receverMsg:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
         ResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore ma",
         receiverResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna al",
-        ResearchName:"Research Topic 4",
+        ResearchName:"Research Topic 8",
         Date:"Date of Search"
     },
-    {
-        id: "01211",
-        Name: "Sandeep",
-        lastChat: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ",
-        receverMsg:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
-        ResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore ma",
-        receiverResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna al",
-        ResearchName:"Research Topic 4",
-        Date:"Date of Search"
-    },
-    {
-        id: "01212",
-        Name: "Anat",
-        lastChat: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ",
-        receverMsg:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
-        ResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore ma",
-        receiverResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna al",
-        ResearchName:"Research Topic 4",
-        Date:"Date of Search"
-    },
-    {
-        id: "01213",
-        Name: "shadab",
-        lastChat: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ",
-        receverMsg:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
-        ResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore ma",
-        receiverResearchTopicChat:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna al",
-        ResearchName:"Research Topic 4",
-        Date:"Date of Search"
-    },
+    
     
 ]
 

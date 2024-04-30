@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UserList from "./UserList";
+import { Link,useLocation } from "react-router-dom";
 import user from "../data";
 import { useContext } from "react";
 import { Detailcontext } from "../Context/Details";
@@ -23,11 +24,13 @@ function sidebar2comp() {
     if (searchResults) {
       setSearchCalled(true);
       counterState.setdata(results);
+      
     }
   };
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
+    handleSearch();
   };
 
   const handleKeyDown = (event) => {
@@ -37,24 +40,47 @@ function sidebar2comp() {
   };
 
   return (
-    <div className="w-full h-full overflow-y-auto scroll-smooth bg-[#2d2d2d]">
+    <div className="w-full h-full  bg-[#2d2d2d]">
       <div className="w-full h-14 flex items-center sticky  ">
+        <div className="h-full w-[90%] flex items-center p-4">
+          
         <input
-          className="Input rounded-full p-2  h-10 w-5/6 "
+          className="Input rounded-full p-2  h-10 w-[100%] text-slate-950"
           type="text"
           id="firstName"
           value={searchTerm}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
-          placeholder="Search ID"
+          placeholder="Search ID/ Name.."
         />
-        <div>{/* plus icon lagana hai is dv me */}</div>
+          
+        </div>
+        <div className="bg-white w-[10%] h-[60%] flex justify-center items-center">
+        <Link to="/">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+
+        </Link>
+
+        </div>
       </div>
 
       {/* message chat component  */}
 
-      <div className="border-2 border-black h-full flex-col gap-7">
-        <Accordion.Root type="multiple"  collapsible>
+      <div className="border-2 border-black h-full w-full flex-col gap-7">
+        <Accordion.Root type="multiple" collapsible>
           <Accordion.Item value="item-1">
             <Accordion.Trigger className="">
               {" "}
@@ -75,7 +101,7 @@ function sidebar2comp() {
             </Accordion.Trigger>
             <Accordion.Content>
               {res.map((item) => (
-                <div className="box-border mt-2 cursor-pointer" key={item.id}>
+                <div className="box-border mt-2  cursor-pointer" key={item.id}>
                   <UserList {...item} />
                 </div>
               ))}

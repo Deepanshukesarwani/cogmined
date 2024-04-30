@@ -18,7 +18,7 @@ function sidebar1comp() {
   const location = useLocation();
   // console.log(isChecked);
   return (
-    <div className=" w-20  flex-col justify-between h-screen bg-slate-900 ">
+    <div className=" w-20  flex-col justify-between h-screen bg-gray-800 ">
       <section className="h-3/4 border-black ">
         {/* profile section  */}
         <Link to="/profile">
@@ -33,7 +33,7 @@ function sidebar1comp() {
         {/* ...................................................................................................................... */}
         {/* chat section  */}
         <Link to="/">
-          <div className={`w-full h-1/6 rounded-full hover: bg-blend-lighten ${location.pathname === '/' ? 'shadow-white bg-slate-500 bg-blend-lighten' : ''}`}>
+          <div className={`w-full h-1/6 rounded-full hover: bg-blend-lighten ${location.pathname === '/' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}`}>
             <svg
               viewBox="0 0 15 15"
               className="w-full p-6"
@@ -53,7 +53,7 @@ function sidebar1comp() {
         {/* user section  */}
 
         <Link to="/user">
-          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/user' ? 'shadow-white bg-slate-500 bg-blend-lighten' : ''}`}>
+          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/user' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}`}>
             <svg
               viewBox="0 0 15 15"
               className="w-full p-6"
@@ -73,7 +73,7 @@ function sidebar1comp() {
         {/* setting section  */}
 
         <Link to="/setting">
-          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/setting' ? 'shadow-white bg-slate-500 bg-blend-lighten' : ''}`}>
+          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/setting' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}`}>
             <svg
               viewBox="0 0 15 15"
               className="w-full p-6 "
