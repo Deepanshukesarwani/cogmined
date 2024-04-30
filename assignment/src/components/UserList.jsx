@@ -2,7 +2,7 @@ import React from 'react';
 import User from "../data";
 import { useContext } from 'react';
 import {Detailcontext} from "../Context/Details";
-import { useLocation } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 const UserList = ({id,Name,Lastchat,ResearchName,receverMsg }) => {
 
     const res=User;
@@ -17,12 +17,16 @@ const UserList = ({id,Name,Lastchat,ResearchName,receverMsg }) => {
       )
     });
     // cgthonsole.log(userData);
-    if(location.pathname==='/')
+    // if(location.pathname==='/')
     counterState.setdata(userData);
+    counterState.setShowSetting(false);
   }
   return (
+    <>
+    
     <div className='w-full h-16 hover:bg-gray-700 flex gap-1 p-2' onClick={ClickHandler}>
       {/* ye raha result */}
+     
      {
      counterState.mode?(
       <>
@@ -43,6 +47,8 @@ const UserList = ({id,Name,Lastchat,ResearchName,receverMsg }) => {
      )
      }
     </div>
+    
+    </>
   )
 }
 

@@ -5,7 +5,7 @@ import user from "../data";
 import { useContext } from "react";
 import { Detailcontext } from "../Context/Details";
 import * as Accordion from "@radix-ui/react-accordion";
-// import { ChevronDownIcon } from "@radix-ui/react-icons";
+
 function sidebar2comp() {
   const res = user;
   const [searchTerm, setSearchTerm] = useState("");
@@ -24,20 +24,26 @@ function sidebar2comp() {
     if (searchResults) {
       setSearchCalled(true);
       counterState.setdata(results);
+
       
     }
   };
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
-    handleSearch();
+    // handleSearch();
   };
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       handleSearch();
+      counterState.setShowSetting(false);
     }
   };
+
+  const buttonClickHandler=()=>{
+    handleSearch();
+  }
 
   return (
     <div className="w-full h-full  bg-[#2d2d2d]">
@@ -55,8 +61,8 @@ function sidebar2comp() {
         />
           
         </div>
-        <div className="bg-white w-[10%] h-[60%] flex justify-center items-center">
-        <Link to="/">
+        <div className="bg-white w-[10%] h-[60%] flex justify-center items-center" onClick={buttonClickHandler}>
+        
           <svg
             width="15"
             height="15"
@@ -72,7 +78,7 @@ function sidebar2comp() {
             ></path>
           </svg>
 
-        </Link>
+        
 
         </div>
       </div>
@@ -80,7 +86,7 @@ function sidebar2comp() {
       {/* message chat component  */}
 
       <div className="border-2 border-black h-full w-full flex-col gap-7">
-        <Accordion.Root type="multiple" collapsible>
+        <Accordion.Root type="multiple" collapsible >
           <Accordion.Item value="item-1">
             <Accordion.Trigger className="">
               {" "}
@@ -101,9 +107,11 @@ function sidebar2comp() {
             </Accordion.Trigger>
             <Accordion.Content>
               {res.map((item) => (
+                // <Link to="/">
                 <div className="box-border mt-2  cursor-pointer" key={item.id}>
                   <UserList {...item} />
                 </div>
+                // </Link>
               ))}
             </Accordion.Content>
           </Accordion.Item>

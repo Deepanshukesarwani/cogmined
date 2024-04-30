@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       animation:{
-        "spin":"spin 1s linear 10"
+        "spin":"spin 1s linear 40"
       }
     },
   },

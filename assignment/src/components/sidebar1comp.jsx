@@ -16,6 +16,9 @@ function sidebar1comp() {
   };
 
   const location = useLocation();
+  const clickHandlerOfSetting=()=>{
+    modeState.setShowSetting((prev)=>!prev);
+  }
   // console.log(isChecked);
   return (
     <div className=" w-20  flex-col justify-between h-screen bg-gray-800 ">
@@ -73,7 +76,7 @@ function sidebar1comp() {
         {/* setting section  */}
 
         <Link to="/setting">
-          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/setting' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}`}>
+          <div className={`w-full h-1/6  hover: rounded-full ${location.pathname === '/setting' ? 'shadow-white bg-gray-700 bg-blend-lighten' : ''}`} onClick={clickHandlerOfSetting}>
             <svg
               viewBox="0 0 15 15"
               className="w-full p-6 "
